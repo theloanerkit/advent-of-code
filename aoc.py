@@ -21,6 +21,15 @@ def read(year, day, fmt):
     return data
 
 def get_smallest(arr, n=1):
+    """gets the smallest n elements in a list
+
+    Args:
+        arr (list): list to search
+        n (int, optional): number of elements to look for. Defaults to 1.
+
+    Returns:
+        (list): list containing the smallest n elements of the list
+    """
     small = []
     for i in range(n):
         small.append(min(arr))
@@ -28,6 +37,16 @@ def get_smallest(arr, n=1):
     return small
 
 def str_to_list(string, sep, elem_type="str"):
+    """converts a string to a list
+
+    Args:
+        string (str): string to be converted to a list
+        sep (str): separator to split the string at
+        elem_type (str, optional): type of the elements in the resulting list. Defaults to "str".
+
+    Returns:
+        (list): list of elements from the original string
+    """
     arr = string.split(sep)
     if elem_type == "int":
         for i in range(len(arr)):
