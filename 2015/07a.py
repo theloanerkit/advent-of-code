@@ -140,7 +140,7 @@ def wires_have_signal(wires):
     return True
 
 
-data = aoc.read("2015","07","list")
+data = aoc.read("2015","07b","list")
 
 #FIXME
 # get wires
